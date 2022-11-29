@@ -16,16 +16,15 @@ html {
 }
 
 header {
-  /* background-color: #416a59; */
   background-color: white;
-  opacity: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   padding: 1rem 2rem;
+  font-family: "Roboto-Mono-Regular";
 }
 
 .nav {
@@ -39,433 +38,82 @@ header h1 {
 nav li {
   display: inline-block;
   padding: 0 2rem;
-  color: white;
+  color: black;
 }
 
 .center {
   text-align: center;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: -3px;
+}
+
+.word-spacing {
+  word-spacing: -1px;
+}
+
 .banner {
-  background-image: url(../images/view\ copy.pdf);
-  /* min-width: fit-content;
-  min-height: 540px; */
+  background-image: url(../images/view.JPG);
+  min-width: fit-content;
   min-height: 540px;
   width: 100%;
 }
 
 .innerbanner {
   background-color: white;
-  max-width: 530px;
-  min-height: 284px;
   border-radius: 10px;
   position: relative;
   left: 51%;
   top: 190px;
+  max-width: 33.125rem;
+  max-height: 18rem;
+  min-height: 17.75rem;
 }
 
 .innerbanner h2 {
   font-size: 3.125rem;
+  font-family: "Mouse-Memoirs";
+  grid-row: 1;
+  padding-top: 2rem;
+}
+
+.innerbanner p {
+  grid-row: 2;
+  font-size: 16px;
+  padding-top: 1.5rem;
   font-family: "Roboto-Mono-Regular";
+}
+
+.innerbanner button {
+  max-width: 40%;
+  max-height: 50%;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 10 30px 10 30px;
 }
 
 .center {
   text-align: center;
 }
 
-/* 
-.button {
-  border-radius: 4px;
-  background-color: #4a4a4a;
-  color: white;
+.icon-section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  justify-content: space-evenly;
 }
 
-.image-container {
-  overflow: hidden;
+.icon-section img {
+  padding: 2rem 6rem 0 6rem;
 }
 
-.image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding-bottom: 2.5rem;
+.icon-container p {
+  padding-top: 0.8rem;
 }
-
-@media only screen and (max-width: 760px) {
-  .main-content {
-    top: 2.5625rem;
-  }
-}
-
-header {
-  position: fixed;
-  width: 100%;
-  border-bottom: solid 1px #c6c1c1;
-  background-color: white;
-  height: 85px;
-}
-
-header .content {
-  display: flex;
-  align-items: center;
-  padding: 1.875rem;
-}
-
-header .logo {
-  flex: 1;
-  margin-left: 30px;
-  color: #4a4a4a;
-  font-size: 24px;
-  font-family: "Roboto-Mono-Regular";
-}
-
-header nav ul {
-  display: flex;
-}
-
-nav li {
-  padding-left: 3.5rem;
-  font-family: "Roboto-Regular";
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #4a4a4a;
-}
-
-nav a {
-  vertical-align: bottom;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #4a4a4a;
-}
-
-header .icon {
-  width: 1rem;
-  padding-left: 0.75rem;
-  margin-right: 30px;
-}
-
-header .mobile {
-  display: none;
-}
-
-@media only screen and (max-width: 760px) {
-  header .desktop {
-    display: none;
-  }
-
-  header .mobile {
-    display: block;
-    width: 100%;
-  }
-
-  header .content {
-    padding: 0.5rem 0;
-  }
-
-  header .mobile ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-
-  header .mobile li {
-    padding: 0;
-  }
-
-  header .mobile .button {
-    padding: 0.1875rem 0.5rem;
-    background-color: #9dc20b;
-    line-height: 1.6;
-    color: white;
-  }
-}
-
-.banner {
-  background-image: url("../images/veranda.jpg");
-}
-
-#banner-section {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  height: 43.5rem;
-}
-
-#banner-cta {
-  padding: 0 5rem 2.5rem 5rem;
-  border: solid 1px #979797;
-  border-radius: 4px;
-  background-color: #9dc20b;
-  position: relative;
-  top: 10.625rem;
-  margin-left: 6.25rem;
-}
-
-#banner-cta .content {
-  width: 25.625rem;
-  margin-top: 2rem;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  color: white;
-}
-
-#banner-cta h1 {
-  font-size: 3.125rem;
-}
-
-#banner-cta h2 {
-  font-size: 2.25rem;
-}
-
-#banner-cta span strong {
-  font-weight: bold;
-}
-
-#banner-cta .striking {
-  font-family: "Rubik", sans-serif;
-  padding-bottom: 0.75rem;
-  color: white;
-  line-height: 1.4;
-  font-size: 3.125rem;
-}
-
-#banner-cta .button {
-  margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
-}
-
-@media only screen and (max-width: 760px) {
-  #banner-section {
-    align-items: center;
-    justify-content: center;
-    height: 28rem;
-  }
-
-  #banner-cta {
-    position: static;
-    width: auto;
-    height: auto;
-    background-color: transparent;
-    border: none;
-  }
-
-  #banner-cta .content {
-    margin-top: 0;
-  }
-
-  #banner-cta .email {
-    display: none;
-  }
-
-  .email span {
-    color: white;
-    font-size: 1.25rem;
-    font-family: "Roboto-Regular";
-    line-height: 1.4;
-  }
-
-  #banner-cta h1 {
-    font-size: 3.125rem;
-  }
-
-  #banner-cta h2 {
-    font-size: 2.25rem;
-  }
-}
-
-@media only screen and (max-width: 450px) {
-  #banner-section {
-    height: 20rem;
-  }
-
-  #banner-cta h1 {
-    font-size: 2.25rem;
-  }
-
-  #banner-cta h2 {
-    font-size: 2rem;
-  }
-}
-
-#features-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
-  background-color: #f3f3f3;
-}
-
-.feature {
-  flex: 1;
-  padding: 2rem;
-  margin: 0px 1.25rem;
-  background-color: white;
-}
-
-.feature .image-container {
-  width: 90%;
-  height: 65%;
-  margin: 0 auto;
-}
-
-.feature h2 {
-  padding-bottom: 0.5rem;
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: #4a4a4a;
-  line-height: 1.2;
-}
-
-.feature h3 {
-  font-size: 1rem;
-  line-height: 1.2;
-  font-weight: 300;
-  color: #4a4a4a;
-  font-weight: lighter;
-}
-
-@media only screen and (max-width: 890px) {
-  .feature h2 {
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
-  }
-
-  .feature h3 {
-    font-size: 0.875rem;
-    line-height: 1.4;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  #features-section {
-    flex-flow: column;
-    padding: 0;
-  }
-
-  .feature {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
-  }
-}
-
-#contact-section {
-  padding: 4rem 0;
-  background-color: #4a4a4a;
-  font-family: "Roboto", sans-serif;
-}
-
-#contact-section .content {
-  padding: 0 0.625rem;
-  margin-bottom: 4rem;
-}
-
-#contact-section .content h2 {
-  font-size: 2.25rem;
-  font-weight: bold;
-  color: white;
-  opacity: 100%;
-}
-
-#contact-section .content h3 {
-  font-size: 1.75rem;
-  line-height: 1.4;
-  font-weight: 300;
-  color: white;
-}
-
-#contact-section .formular-container {
-  font-size: 1.5rem;
-  width: 40%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  padding: 25px;
-}
-
-#contact-section label {
-  font-size: 1.25rem;
-  color: #4b4d52;
-  font-weight: 400;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-button[type="submit"] {
-  background-color: grey;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-button[type="submit"]:hover {
-  background-color: darkslategrey;
-  border-radius: 8px;
-}
-
-@media only screen and (max-width: 760px) {
-  #contact-section {
-    padding: 1.5rem 0 0 0;
-  }
-
-  #contact-section .content {
-    margin-bottom: 1rem;
-  }
-
-  #contact-section .content h2 {
-    padding-bottom: 0.625rem;
-    font-size: 1.125rem;
-    line-height: 1.3;
-    font-weight: normal;
-  }
-
-  #contact-section .content h3 {
-    font-size: 0.875rem;
-    line-height: 1.4;
-  }
-
-  #contact-section .images-container {
-    padding: 0;
-  }
-
-  #contact-section .extra {
-    display: none;
-  }
-}
-
-footer {
-  background-color: #9b9b9b;
-  padding: 1.5rem 2rem;
-}
-
-footer .content {
-  color: white;
-  display: flex;
-  font-size: 0.75rem;
-}
-
-footer .copyright {
-  flex-grow: 1;
-}
-
-@media only screen and (min-width: 760px) {
-  footer .content {
-    font-size: 0.625rem;
-  }
-}
- */
